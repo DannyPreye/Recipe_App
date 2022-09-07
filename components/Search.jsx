@@ -1,12 +1,20 @@
 import { useState } from 'react';
 
+import { useRouter } from 'next/router';
+
 import { FaSearch } from 'react-icons/fa';
 
 export default function Search() {
   const [input, setInput] = useState('');
+  const router = useRouter();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    router.push(`/searched/${input}`);
+  };
 
   return (
-    <form className='relative w-full mb-[3rem] '>
+    <form onSubmit={submitHandler} className='relative w-full mb-[3rem] '>
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}

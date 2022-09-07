@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function Cat({ recipes }) {
   const [cuisines, setCuisines] = useState(recipes.results);
-  console.log(cuisines);
+
   return (
     <div
       className='grid gap-[3rem] grid-col-1 md:grid-cols-2 lg:grid-cols-3'
