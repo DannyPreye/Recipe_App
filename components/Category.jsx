@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { FaPizzaSlice, FaHamburger } from 'react-icons/fa';
 import { GiNoodles, GiChopsticks } from 'react-icons/gi';
+import { TbSoup } from 'react-icons/tb';
 
 export default function Category() {
   return (
@@ -24,10 +25,16 @@ export default function Category() {
           <h4 className='text-white text-[0.8rem]'>Thai</h4>
         </a>
       </Link>
-      <Link href={'/cuisine/japanese'}>
+      <Link href={'/cuisine/chinese'}>
         <a className='flex items-center justify-center flex-col rounded-full mr-[2rem] focus:bg-gradient-to-r focus:from-[#f27121] focus:to-[#e94057] bg-gradient-to-bl from-[#494949] to-[#313131] w-[6rem] h-[6rem] cursor-pointer scale-[0.8]'>
           <GiChopsticks className='text-white text-[1.5rem] ' />
-          <h4 className='text-white text-[0.8rem]'>Japanese</h4>
+          <h4 className='text-white text-[0.8rem]'>Chinese</h4>
+        </a>
+      </Link>
+      <Link href={'/cuisine/african'}>
+        <a className='flex items-center justify-center flex-col rounded-full mr-[2rem] focus:bg-gradient-to-r focus:from-[#f27121] focus:to-[#e94057] bg-gradient-to-bl from-[#494949] to-[#313131] w-[6rem] h-[6rem] cursor-pointer scale-[0.8]'>
+          <TbSoup className='text-white text-[1.5rem] ' />
+          <h4 className='text-white text-[0.8rem]'>African</h4>
         </a>
       </Link>
     </div>

@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function Recipe({ result }) {
   const [details, setDetails] = useState(result);
-  const [activeTab, setActive] = useState('instructions');
+  const [activeTab, setActive] = useState('instruction');
 
   return (
     <motion.div
@@ -63,7 +63,7 @@ export default function Recipe({ result }) {
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ ease: 'easeIn', duration: 2 }}
+            transition={{ ease: 'easeIn', duration: 1 }}
             className='mt-[2rem] w-[90%]'
           >
             <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
