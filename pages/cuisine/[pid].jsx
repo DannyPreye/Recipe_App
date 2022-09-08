@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head'
 
 import { motion } from 'framer-motion';
 
@@ -14,7 +15,7 @@ export default function Cat({ recipes }) {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       transition={{ ease: 'easeIn', duration: 2 }}
-      className='grid gap-[3rem] grid-col-1 md:grid-cols-2 lg:grid-cols-3'
+      className='grid gap-[1rem] lg:gap-[3rem] grid-col-1 md:grid-cols-2 lg:grid-cols-3'
     >
       {cuisines.map((cuisine) => (
         <div key={cuisine.id} className='min-h-[25rem]'>

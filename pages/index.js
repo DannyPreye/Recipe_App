@@ -7,8 +7,7 @@ import { motion } from 'framer-motion'
 import { Popular, Veggie } from '../components';
 
 export default function Index({ res, veggieData }) {
-    const [popular, setPopular] = useState(veggieData.recipes);
-    const [veggie, setVeggie] = useState(res.recipes);
+
 
 
     return (
